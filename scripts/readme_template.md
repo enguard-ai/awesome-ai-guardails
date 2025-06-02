@@ -4,27 +4,13 @@ A curated list of awesome AI guardrails.
 
 ## Categories
 
-### Risk Categories
+### Main Categories
 
-- `all`
-- `hallucination`
-- `nsfw`
-- `factuality`
-- `bias`
-- `language-detection`/`language-translation`
-- `pii`
-- `rejection`
-- `prompt-injection`
-- `deepfake-detection`
-- `miscellaneous`
+{{CATEGORIES_TABLE}}
 
-### Model Categories
+### Sub Categories
 
-- `all`
-- `text-classification`
-- `text-to-text-generation`
-- `image-classification`
-- `token-classification`
+{{SUB_CATEGORIES_TABLE}}
 
 ## Models
 
@@ -46,6 +32,7 @@ A curated list of awesome AI guardrails.
 | [Entreprise PII Masking](https://huggingface.co/collections/ai4privacy/entreprise-pii-masking-68255aab0ad327ba71f3210f) | `pii` | Entreprise PII Masking are datasets for enterprise PII masking focused on location, work, health, digital and financial information. |
 | [prithivMLmods/OpenDeepfake-Preview](https://huggingface.co/datasets/prithivMLmods/OpenDeepfake-Preview) | `deepfake-detection` | OpenDeepfake-Preview is a dataset of 20K deepfake images. |
 | [eliasalbouzidi/NSFW-Safe-Dataset](https://huggingface.co/datasets/eliasalbouzidi/NSFW-Safe-Dataset?not-for-all-audiences=true) | `nsfw` | NSFW-Safe-Dataset is a dataset for NSFW content detection. |
+| [lmsys/toxic-chat](https://huggingface.co/datasets/lmsys/toxic-chat) | `toxic-chat` | Toxic-Chat is a dataset for toxic chat detection. |
 
 ## Papers
 
@@ -57,3 +44,5 @@ A curated list of awesome AI guardrails.
 | [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://arxiv.org/pdf/2311.05232) | `hallucination` | A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions |
 | [Granite Guardian: A Guardrail Framework for Large Language Models](https://arxiv.org/abs/2412.07724) | `all` | Granite Guardian is a guardrail framework for large language models. |
 | ["Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models](https://arxiv.org/abs/2308.03825) | `prompt-injection` | "Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models |
+| ["Tiny-Toxic-Detector: A compact transformer-based model for toxic content detection](https://arxiv.org/abs/2409.02114) | `toxic-chat` | "Tiny-Toxic-Detector: A compact transformer-based model for toxic content detection |
+| [T2ISafety: Benchmark for Assessing Fairness, Toxicity, and Privacy in Image Generation](https://arxiv.org/abs/2501.12612) | `toxic-chat` | T2ISafety is a benchmark for assessing fairness, toxicity, and privacy in image generation. |

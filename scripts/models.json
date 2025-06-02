@@ -4,15 +4,26 @@
       "name": "Falconsai/nsfw_image_detection",
       "size": "0.1B",
       "task": "image-classification",
-      "category": ["nsfw"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
       "description": "Falconsai/nsfw_image_detection is a 0.1B parameter model that can detect NSFW images.",
       "url": "https://huggingface.co/Falconsai/nsfw_image_detection"
+    },
+    {
+      "name": "OpenSafetyLab/ImageGuard",
+      "size": "na",
+      "task": "image-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
+      "description": "OpenSafetyLab/ImageGuard is a model that can detect NSFW images.",
+      "url": "https://huggingface.co/OpenSafetyLab/ImageGuard"
     },
     {
       "name": "Marqo/nsfw-image-detection-384",
       "size": "0.006B",
       "task": "image-classification",
-      "category": ["nsfw"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
       "description": "Marqo/nsfw-image-detection-384 is a 0.006B parameter model that can detect NSFW images.",
       "url": "https://huggingface.co/Marqo/nsfw-image-detection-384"
     },
@@ -20,15 +31,44 @@
       "name": "Freepik/nsfw_image_detector",
       "size": "0.086B",
       "task": "image-classification",
-      "category": ["nsfw"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
       "description": "Freepik/nsfw_image_detector is a 0.086B parameter model that can detect NSFW images.",
       "url": "https://huggingface.co/Freepik/nsfw_image_detector?not-for-all-audiences=true"
+    },
+    {
+      "name": "TostAI/nsfw-image-detection-large",
+      "size": "0.0871B",
+      "task": "image-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
+      "description": "TostAI/nsfw-image-detection-large is a 0.0871B parameter model that can detect NSFW images.",
+      "url": "https://huggingface.co/TostAI/nsfw-image-detection-large"
+    },
+    {
+      "name": "Ateeqq/nsfw-image-detection",
+      "size": "0.092B",
+      "task": "image-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
+      "description": "Ateeqq/nsfw-image-detection is a 0.092B parameter model that can detect NSFW images.",
+      "url": "https://huggingface.co/Ateeqq/nsfw-image-detection"
+    },
+    {
+      "name": "TostAI/nsfw-text-detection-large",
+      "size": "0.355B",
+      "task": "text-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
+      "description": "TostAI/nsfw-text-detection-large is a 0.355B parameter model that can detect NSFW text.",
+      "url": "https://huggingface.co/TostAI/nsfw-text-detection-large"
     },
     {
       "name": "Organika/sdxl-detector",
       "size": "0.086B",
       "task": "image-classification",
-      "category": ["deepfake-detection"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["deepfake-detection"],
       "description": "Organika/sdxl-detector is a 0.086B parameter model that can detect deepfake images.",
       "url": "https://huggingface.co/Organika/sdxl-detector"
     },
@@ -36,7 +76,8 @@
       "name": "prithivMLmods/Deep-Fake-Detector-v2-Model",
       "size": "0.086B",
       "task": "image-classification",
-      "category": ["deepfake-detection"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["deepfake-detection"],
       "description": "prithivMLmods/Deep-Fake-Detector-v2-Model is a 0.086B parameter model that can detect deepfake images.",
       "url": "https://huggingface.co/prithivMLmods/Deep-Fake-Detector-v2-Model"
     },
@@ -44,15 +85,35 @@
       "name": "ibm-granite/granite-guardian-3.1-2b",
       "size": "2B",
       "task": "text-classification",
-      "category": ["hallucination"],
+      "category": ["response-and-relevance"],
+      "sub_category": ["factuality", "logical-consistency", "relevance"],
       "description": "ibm-granite/granite-guardian-3.1-2b is a 2B parameter model that can detect hallucinations in text.",
       "url": "https://huggingface.co/ibm-granite/granite-guardian-3.1-2b"
+    },
+    {
+      "name": "s-nlp/E5-EverGreen-Multilingual-Small",
+      "size": "0.118B",
+      "task": "text-classification",
+      "category": ["response-and-relevance"],
+      "sub_category": ["factuality"],
+      "description": "s-nlp/E5-EverGreen-Multilingual-Small is a 0.118B parameter model that can detect temporal risks in text.",
+      "url": "https://huggingface.co/s-nlp/E5-EverGreen-Multilingual-Small"
+    },
+    {
+      "name": "s-nlp/mdistilbert-base-formality-ranker",
+      "size": "0.142B",
+      "task": "text-classification",
+      "category": ["content-validation"],
+      "sub_category": ["quality"],
+      "description": "s-nlp/mdistilbert-base-formality-ranker is a 0.142B parameter model that can detect the quality of the response.",
+      "url": "https://huggingface.co/s-nlp/mdistilbert-base-formality-ranker"
     },
     {
       "name": "google/shieldgemma-2b",
       "size": "2B",
       "task": "text-classification",
-      "category": ["all"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content", "offensive-language", "prompt-injection", "sensitive-content"],
       "description": "google/shieldgemma-2b is a 2B parameter model that can detect any risks you provide",
       "url": "https://huggingface.co/google/shieldgemma-2b"
     },
@@ -60,47 +121,107 @@
       "name": "bespokelabs/Bespoke-MiniCheck-7B",
       "size": "7B",
       "task": "text-classification",
-      "category": ["factuality"],
+      "category": ["response-and-relevance"],
+      "sub_category": ["factuality", "logical-consistency", "relevance"],
       "description": "bespokelabs/Bespoke-MiniCheck-7B is a 7B parameter model that can detect hallucinations in text.",
       "url": "https://huggingface.co/bespokelabs/Bespoke-MiniCheck-7B"
     },
     {
       "name": "meta-llama/Llama-Guard-4-12B",
       "size": "12B",
-      "task": "text-classification",
-      "category": ["hallucination"],
-      "description": "meta-llama/Llama-Guard-4-12B is a 12B parameter model that can detect hallucinations in text.",
+      "task": "image-text-to-text",
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content", "offensive-language", "prompt-injection", "sensitive-content"],
+      "description": "meta-llama/Llama-Guard-4-12B is a 12B parameter model that can detect harmful content.",
       "url": "https://huggingface.co/meta-llama/Llama-Guard-4-12B"
+    },
+    {
+      "name": "meta-llama/Llama-3.2-1B-Instruct",
+      "size": "1B",
+      "task": "text-to-text-generation",
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content", "offensive-language", "prompt-injection", "sensitive-content"],
+      "description": "meta-llama/Llama-3.2-1B-Instruct is a 1B parameter model that can detect harmful content.",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "name": "lytang/MiniCheck-Flan-T5-Large",
       "size": "0.8B",
       "task": "text-classification",
-      "category": ["factuality"],
-      "description": "lytang/MiniCheck-Flan-T5-Large is a 0.8B parameter model that can detect hallucinations in text.",
+      "category": ["response-and-relevance"],
+      "sub_category": ["factuality", "logical-consistency", "relevance"],
+      "description": "lytang/MiniCheck-Flan-T5-Large is a 0.8B parameter model that can detect hallucinations.",
       "url": "https://huggingface.co/lytang/MiniCheck-Flan-T5-Large"
     },
     {
       "name": "lytang/MiniCheck-RoBERTa-Large",
       "size": "0.4B",
       "task": "text-classification",
-      "category": ["factuality"],
-      "description": "lytang/MiniCheck-RoBERTa-Large is a 0.4B parameter model that can detect hallucinations in text.",
+      "category": ["response-and-relevance"],
+      "sub_category": ["factuality", "logical-consistency", "relevance"],
+      "description": "lytang/MiniCheck-RoBERTa-Large is a 0.4B parameter model that can detect hallucinations.",
       "url": "https://huggingface.co/lytang/MiniCheck-RoBERTa-Large"
+    },
+    {
+      "name": "PatronusAI/glider",
+      "size": "3.8B",
+      "task": "text-classification",
+      "category": ["response-and-relevance", "language-quality"],
+      "sub_category": ["factuality", "logical-consistency", "relevance", "quality"],
+      "description": "PatronusAI/glider is a 3.8B parameter model that can judge and evaluate the quality of the response.",
+      "url": "https://huggingface.co/PatronusAI/glider"
+    },
+    {
+      "name": "madhurjindal/Jailbreak-Detector-2-XL",
+      "size": "0.5B",
+      "task": "text-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["jailbreaks"],
+      "description": "madhurjindal/Jailbreak-Detector-2-XL is a 0.5B adapter that can detect jailbreak in text.",
+      "url": "https://huggingface.co/madhurjindal/Jailbreak-Detector-2-XL"
+    },
+    {
+      "name": "flowaicom/Flow-Judge-v0.1",
+      "size": "3.8B",
+      "task": "text-classification",
+      "category": ["response-and-relevance", "language-quality"],
+      "sub_category": ["factuality", "logical-consistency", "relevance", "quality"],
+      "description": "flowaicom/Flow-Judge-v0.1 is a 3.8B parameter model that can judge and evaluate the quality of the response.",
+      "url": "https://huggingface.co/flowaicom/Flow-Judge-v0.1"
+    },
+    {
+      "name": "nvidia/prompt-task-and-complexity-classifier",
+      "size": "0.184B",
+      "task": "text-classification",
+      "category": ["response-and-relevance", "language-quality"],
+      "sub_category": ["relevance", "quality"],
+      "description": "nvidia/prompt-task-and-complexity-classifier is a 0.184B parameter model that can detect hallucinations in text.",
+      "url": "https://huggingface.co/nvidia/prompt-task-and-complexity-classifier"
     },
     {
       "name": "eliasalbouzidi/distilbert-nsfw-text-classifier",
       "size": "0.068B",
       "task": "text-classification",
-      "category": ["nsfw"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content"],
       "description": "eliasalbouzidi/distilbert-nsfw-text-classifier is a 0.068B parameter model that can detect NSFW text.",
       "url": "https://huggingface.co/eliasalbouzidi/distilbert-nsfw-text-classifier"
+    },
+    {
+      "name": "NousResearch/Minos-v1",
+      "size": "0.4B",
+      "task": "text-classification",
+      "category": ["content-validation"],
+      "sub_category": ["refusal"],
+      "description": "NousResearch/Minos-v1 is a 0.4B parameter model that can detect inappropriate-content text.",
+      "url": "https://huggingface.co/NousResearch/Minos-v1"
     },
     {
       "name": "d4data/bias-detection-model",
       "size": "0.3B",
       "task": "text-classification",
-      "category": ["bias"]    ,
+      "category": ["content-validation"],
+      "sub_category": ["bias"],
       "description": "d4data/bias-detection-model is a 268M parameter model that can detect bias in text.",
       "url": "https://huggingface.co/d4data/bias-detection-model"
     },
@@ -108,23 +229,44 @@
       "name": "protectai/distilroberta-base-rejection-v1",
       "size": "0.0821B",
       "task": "text-classification",
-      "category": ["rejection"],
+      "category": ["response-and-relevance"],
+      "sub_category": ["rejection"],
       "description": "protectai/distilroberta-base-rejection-v1 is a 0.0821B parameter model that can detect rejection in text.",
       "url": "https://huggingface.co/protectai/distilroberta-base-rejection-v1"
     },
     {
-      "name": "protectai/distilroberta-base-prompt-injection-v1",
-      "size": "0.184B",
+      "name": "protectai/deberta-v3-base-prompt-injection-v2",
+      "size": "0.182B",
       "task": "text-classification",
-      "category": ["prompt-injection"],
-      "description": "protectai/distilroberta-base-prompt-injection-v1 is a 0.184B parameter model that can detect prompt injection in text.",
-      "url": "https://huggingface.co/protectai/distilroberta-base-prompt-injection-v1"
+      "category": ["security-and-privacy"],
+      "sub_category": ["prompt-injection"],
+      "description": "protectai/deberta-v3-base-prompt-injection-v2 is a 0.182B parameter model that can detect prompt injection in text.",
+      "url": "https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2"
+    },
+    {
+      "name": "protectai/deberta-v3-small-prompt-injection-v2",
+      "size": "0.142B",
+      "task": "text-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["prompt-injection"],
+      "description": "protectai/deberta-v3-small-prompt-injection-v2 is a 0.184B parameter model that can detect prompt injection in text.",
+      "url": "https://huggingface.co/protectai/deberta-v3-small-prompt-injection-v2"
     },
     {
       "name": "ibm-granite/granite-guardian-hap-125m",
       "size": "0.125B",
       "task": "text-classification",
-      "category": ["toxicity", "hallucination"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["toxicity", "hallucination"],
+      "description": "ibm-granite/granite-guardian-hap-125m is a 0.125B parameter model that can detect toxicity in text.",
+      "url": "https://huggingface.co/ibm-granite/granite-guardian-hap-125m"
+    },
+    {
+      "name": "ibm-granite/granite-guardian-hap-125m",
+      "size": "0.125B",
+      "task": "text-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["toxicity", "hallucination"],
       "description": "ibm-granite/granite-guardian-hap-125m is a 0.125B parameter model that can detect toxicity in text.",
       "url": "https://huggingface.co/ibm-granite/granite-guardian-hap-125m"
     },
@@ -132,15 +274,26 @@
       "name": "meta-llama/Llama-Prompt-Guard-2-86M",
       "size": "0.086B",
       "task": "text-classification",
-      "category": ["prompt-injection", "jailbreaks"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["prompt-injection", "jailbreaks"],
       "description": "meta-llama/Llama-Prompt-Guard-2-86M is a 0.086B parameter model that can detect prompt injection in text.",
       "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M"
+    },
+    {
+      "name": "meta-llama/Llama-Prompt-Guard-2-22M",
+      "size": "0.022B",
+      "task": "text-classification",
+      "category": ["security-and-privacy"],
+      "sub_category": ["prompt-injection", "jailbreaks"],
+      "description": "meta-llama/Llama-Prompt-Guard-2-22M is a 0.022B parameter model that can detect prompt injection in text.",
+      "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-22M"
     },
     {
       "name": "MoritzLaurer/ModernBERT-large-zeroshot-v2.0",
       "size": "0.4B",
       "task": "text-classification",
-      "category": ["miscellaneous"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["inappropriate-content", "offensive-language", "prompt-injection", "sensitive-content"],
       "description": "MoritzLaurer/ModernBERT-large-zeroshot-v2.0 is a 0.4B parameter model that can classify text into a random set of categories.",
       "url": "https://huggingface.co/MoritzLaurer/ModernBERT-large-zeroshot-v2.0"
     },
@@ -148,7 +301,8 @@
       "name": "facebook/nllb-200-distilled-600M",
       "size": "0.6B",
       "task": "text-to-text-generation",
-      "category": ["language-detection"],
+      "category": ["language-quality"],
+      "sub_category": ["translation-accuracy"],
       "description": "facebook/nllb-200-distilled-600M is a 600M parameter model that can detect language in text and generate text in the expected language.",
       "url": "https://huggingface.co/facebook/nllb-200-distilled-600M"
     },
@@ -156,7 +310,8 @@
       "name": "ai4privacy/llama-ai4privacy-multilingual-categorical-anonymiser-openpii",
       "size": "0.15B",
       "task": "token-classification",
-      "category": ["pii"],
+      "category": ["security-and-privacy"],
+      "sub_category": ["pii"],
       "description": "ai4privacy/llama-ai4privacy-multilingual-categorical-anonymiser-openpii is a 7B parameter model that can anonymize PII in text.",
       "url": "https://huggingface.co/ai4privacy/llama-ai4privacy-multilingual-categorical-anonymiser-openpii"
     },
@@ -164,7 +319,8 @@
       "name": "gliner-community/gliner_small-v2.5",
       "size": "0.7B",
       "task": "token-classification",
-      "category": ["all"],
+      "category": ["content-validation", "security-and-privacy"],
+      "sub_category": ["pii", "competitor-blocking"],
       "description": "gliner-community/gliner_small-v2.5 is a 0.7B parameter model that can detect any tokens in text.",
       "url": "https://huggingface.co/gliner-community/gliner_small-v2.5"
     },
@@ -172,7 +328,8 @@
       "name": "osmosis-ai/Osmosis-Structure-0.6B",
       "size": "0.6B",
       "task": "token-classification",
-      "category": ["all"],
+      "category": ["content-validation", "security-and-privacy"],
+      "sub_category": ["pii", "competitor-blocking"],
       "description": "osmosis-ai/Osmosis-Structure-0.6B is a 0.6B parameter model that can extract any tokens from text.",
       "url": "https://huggingface.co/osmosis-ai/Osmosis-Structure-0.6B"
     }
