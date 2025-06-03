@@ -52,7 +52,7 @@ def create_readme():
             "|------|------|----------|--------------|",
         ]
         for model in task_models:
-            row = f"| [{model['name']}]({model['url']}) | `{model['size']}` | `{model['category']}` | `{model['sub_category']}` |"
+            row = f"| [{model['name']}]({model['url']}) | `{model['size']}` | `{", ".join(model['category'])}` | `{", ".join(model['sub_category'])}` |"
             model_rows.append(row)
 
         # Combine header and table for this task
@@ -75,7 +75,7 @@ def create_readme():
         sub_categories = []
         # Create sub-category table for this category
         sub_category_rows = [
-            f"\n### {category['name']} Sub-Categories\n",
+            f"\n### {category['name']}\n",
             "| Sub Category | Description |",
             "|--------------|-------------|",
         ]
