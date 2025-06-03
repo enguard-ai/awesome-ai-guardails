@@ -1,6 +1,10 @@
-# Awesome AI Guardrails
+# 🛡️ Awesome AI Guardrails 🛡️
+
+![Awesome](https://awesome.re/badge.svg) ![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
 
 A curated list of awesome AI guardrails.
+
+If you find this list helpful, give it a ⭐ on GitHub, share it, and contribute by submitting a pull request or issue!
 
 ## Categories
 
@@ -16,13 +20,23 @@ A curated list of awesome AI guardrails.
 
 {{MODELS_TABLE}}
 
-## Libraries
+## Organisations/Companies
+
+### Open Source
 
 | Name | Category | Description |
 |------|----------|-------------|
 | [guardrails](https://github.com/guardrails-ai/guardrails) | `all` | Adding guardrails to large language models. |
 | [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) | `all` | NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. |
 | [uqlm](https://github.com/cvs-health/uqlm) | `hallucination` | UQLM: Uncertainty Quantification for Language Models, is a Python package for UQ-based LLM hallucination detection. |
+| [llm-guard](https://github.com/protectai/llm-guard) | `all` | The Security Toolkit for LLM Interactions. |
+
+### Closed Source
+
+| Name | Category | Description |
+|------|----------|-------------|
+| [Lakera](https://www.lakera.ai/lakera-guard) | `all` | Lakera is a company that provides a range of AI services. |
+| [Guardrails AI Pro](https://www.guardrailsai.com/pro) | `all` | Guardrails AI Pro is a commercial version of guardrails that provides additional features and support. |
 
 ## Datasets
 

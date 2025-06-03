@@ -32,42 +32,91 @@ def create_readme():
     # Sort models based on category and task
     models.sort(key=lambda x: (x["category"], x["task"], x["size"]))
 
-    # Generate models table rows
-    model_rows: list[str] = [
-        "| Name | Size | Task | Category | Sub Category | Description |",
-        "|------|------|------|----------|--------------|-------------|",
-    ]
+    # Group models by task
+    models_by_task = {}
     for model in models:
-        row = f"| [{model['name']}]({model['url']}) | `{model['size']}` | `{model['task']}` | `{model['category']}` | `{model['sub_category']}` | {model['description']} |"
-        model_rows.append(row)
+        task = model["task"]
+        if task not in models_by_task:
+            models_by_task[task] = []
+        models_by_task[task].append(model)
 
-    # Join rows with newlines
-    models_table = "\n".join(model_rows)
+    # Generate tables for each task
+    task_tables = []
+    for task, task_models in models_by_task.items():
+        # Create header for this task
+        task_header = f"\n### {task.title()} Models\n"
+
+        # Generate table rows for this task
+        model_rows = [
+            "| Name | Size | Category | Sub Category |",
+            "|------|------|----------|--------------|",
+        ]
+        for model in task_models:
+            row = f"| [{model['name']}]({model['url']}) | `{model['size']}` | `{model['category']}` | `{model['sub_category']}` |"
+            model_rows.append(row)
+
+        # Combine header and table for this task
+        task_table = task_header + "\n".join(model_rows)
+        task_tables.append(task_table)
+
+    # Join all task tables with newlines
+    models_table = "\n".join(task_tables)
 
     # Generate categories table rows
     category_rows = [
-        "| Name | Description | Sub Categories |",
-        "|------|-------------|----------------|",
+        "| Name | Description |",
+        "|------|-------------|",
     ]
-    sub_category_rows = [
-        "| Category | Sub Category | Description |",
-        "|--------------|--------------|-------------|",
-    ]
+
+    # Dictionary to store sub-category tables by category
+    sub_category_tables = {}
+
     for category in categories:
         sub_categories = []
+        # Create sub-category table for this category
+        sub_category_rows = [
+            f"\n### {category['name']} Sub-Categories\n",
+            "| Sub Category | Description |",
+            "|--------------|-------------|",
+        ]
+
         # Add sub-category rows
         for sub_cat in category["sub_categories"]:
-            sub_cat_row = f"| `{category['name']} | {sub_cat['name']}` | {sub_cat['description']} |"
+            sub_cat_row = f"| `{sub_cat['name']}` | {sub_cat['description']} |"
             sub_category_rows.append(sub_cat_row)
             sub_categories.append(sub_cat["name"])
 
+        # Get models for this category
+        category_models = []
+        for model in models:
+            if category["name"] in model["category"]:
+                model_row = f"| [{model['name']}]({model['url']}) | `{model['size']}` | `{model['task']}` |"
+                category_models.append(model_row)
+
+        # Create dropdown for models
+        if category_models:
+            models_dropdown = [
+                "\n<details>",
+                f"<summary>Models in {category['name']}</summary>\n",
+                "| Name | Size | Task |",
+                "|------|------|------|",
+                *category_models,
+                "</details>\n",
+            ]
+            sub_category_rows.extend(models_dropdown)
+
+        # Store the sub-category table for this category
+        sub_category_tables[category["name"]] = "\n".join(sub_category_rows)
+
         # Add main category row
-        category_row = f"| `{category['name']}` | {category['description']} | {', '.join(sub_categories)} |"
+        category_row = f"| `{category['name']}` | {category['description']} |"
         category_rows.append(category_row)
 
-    # Create separate tables
+    # Create main categories table
     categories_table = "\n".join(category_rows)
-    sub_categories_table = "\n".join(sub_category_rows)
+
+    # Combine all sub-category tables
+    sub_categories_table = "\n".join(sub_category_tables.values())
 
     # Replace both placeholders in template
     readme_content = template.replace("{{CATEGORIES_TABLE}}", categories_table)
