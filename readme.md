@@ -1,6 +1,10 @@
-# Awesome AI Guardrails
+# 🛡️ Awesome AI Guardrails 🛡️
+
+![Awesome](https://awesome.re/badge.svg) ![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
 
 A curated list of awesome AI guardrails.
+
+If you find this list helpful, give it a ⭐ on GitHub, share it, and contribute by submitting a pull request or issue!
 
 ## Categories
 
@@ -101,6 +105,8 @@ A curated list of awesome AI guardrails.
 
 | Name | Size | Task |
 |------|------|------|
+| [HuggingFaceFW/fineweb-edu-classifier](https://huggingface.co/HuggingFaceFW/fineweb-edu-classifier) | `0.109B` | `text-classification` |
+| [nvidia/quality-classifier-deberta](https://huggingface.co/nvidia/quality-classifier-deberta) | `0.184B` | `text-classification` |
 | [facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M) | `0.6B` | `text-to-text-generation` |
 | [nvidia/prompt-task-and-complexity-classifier](https://huggingface.co/nvidia/prompt-task-and-complexity-classifier) | `0.184B` | `text-classification` |
 | [PatronusAI/glider](https://huggingface.co/PatronusAI/glider) | `3.8B` | `text-classification` |
@@ -148,6 +154,8 @@ A curated list of awesome AI guardrails.
 | [s-nlp/mdistilbert-base-formality-ranker](https://huggingface.co/s-nlp/mdistilbert-base-formality-ranker) | `0.142B` | `['content-validation']` | `['quality']` |
 | [d4data/bias-detection-model](https://huggingface.co/d4data/bias-detection-model) | `0.3B` | `['content-validation']` | `['bias']` |
 | [NousResearch/Minos-v1](https://huggingface.co/NousResearch/Minos-v1) | `0.4B` | `['content-validation']` | `['refusal']` |
+| [HuggingFaceFW/fineweb-edu-classifier](https://huggingface.co/HuggingFaceFW/fineweb-edu-classifier) | `0.109B` | `['language-quality']` | `['quality']` |
+| [nvidia/quality-classifier-deberta](https://huggingface.co/nvidia/quality-classifier-deberta) | `0.184B` | `['language-quality']` | `['quality']` |
 | [protectai/distilroberta-base-rejection-v1](https://huggingface.co/protectai/distilroberta-base-rejection-v1) | `0.0821B` | `['response-and-relevance']` | `['rejection']` |
 | [s-nlp/E5-EverGreen-Multilingual-Small](https://huggingface.co/s-nlp/E5-EverGreen-Multilingual-Small) | `0.118B` | `['response-and-relevance']` | `['factuality']` |
 | [lytang/MiniCheck-RoBERTa-Large](https://huggingface.co/lytang/MiniCheck-RoBERTa-Large) | `0.4B` | `['response-and-relevance']` | `['factuality', 'logical-consistency', 'relevance']` |
@@ -199,14 +207,23 @@ A curated list of awesome AI guardrails.
 |------|------|----------|--------------|
 | [meta-llama/Llama-Guard-4-12B](https://huggingface.co/meta-llama/Llama-Guard-4-12B) | `12B` | `['security-and-privacy']` | `['inappropriate-content', 'offensive-language', 'prompt-injection', 'sensitive-content']` |
 
-## Libraries
+## Organisations/Companies
+
+### Open Source
 
 | Name | Category | Description |
 |------|----------|-------------|
 | [guardrails](https://github.com/guardrails-ai/guardrails) | `all` | Adding guardrails to large language models. |
 | [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) | `all` | NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. |
 | [uqlm](https://github.com/cvs-health/uqlm) | `hallucination` | UQLM: Uncertainty Quantification for Language Models, is a Python package for UQ-based LLM hallucination detection. |
+| [llm-guard](https://github.com/protectai/llm-guard) | `all` | The Security Toolkit for LLM Interactions. |
 
+### Closed Source
+
+| Name | Category | Description |
+|------|----------|-------------|
+| [Lakera](https://www.lakera.ai/lakera-guard) | `all` | Lakera is a company that provides a range of AI services. |
+| [Guardrails AI Pro](https://www.guardrailsai.com/pro) | `all` | Guardrails AI Pro is a commercial version of guardrails that provides additional features and support. |
 
 ## Datasets
 

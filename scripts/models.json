@@ -118,6 +118,24 @@
       "url": "https://huggingface.co/google/shieldgemma-2b"
     },
     {
+      "name": "nvidia/quality-classifier-deberta",
+      "size": "0.184B",
+      "task": "text-classification",
+      "category": ["language-quality"],
+      "sub_category": ["quality"],
+      "description": "nvidia/quality-classifier-deberta is a 0.184B parameter model that can detect the quality of the response.",
+      "url": "https://huggingface.co/nvidia/quality-classifier-deberta"
+    },
+    {
+      "name": "HuggingFaceFW/fineweb-edu-classifier",
+      "size": "0.109B",
+      "task": "text-classification",
+      "category": ["language-quality"],
+      "sub_category": ["quality"],
+      "description": "HuggingFaceFW/fineweb-edu-classifier is a 0.109B parameter model that can detect the educational quality of the response.",
+      "url": "https://huggingface.co/HuggingFaceFW/fineweb-edu-classifier"
+    },
+    {
       "name": "bespokelabs/Bespoke-MiniCheck-7B",
       "size": "7B",
       "task": "text-classification",
